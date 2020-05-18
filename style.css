@@ -1,0 +1,79 @@
+body {
+    font-family: 'Barlow';
+    font-size: 22px;
+    color: white;
+	text-align: center;
+	background-color: #008bc4;
+}
+
+Pour le titre principal :
+- couleur verte
+- taille de police 34px
+img { border-radius: 15px; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #E2F3DC;
+  height: 80px;
+
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  margin: 20px 10px;
+  color: #9F3442;
+}
+
+.link:hover {
+  color: #6c5ab6;
+}
+
+h1 {font-size: 150px;
+	margin: 10px;
+}
+
+h2, h3 { color: #F0E68C;
+		font-size: 24px;
+		text-align: center;}
+
+ul, ol { text-align: left}
+
+img { height: 300px; object-fit: cover}
+
+p {margin: 50px 100px 50px 100px}
+
+.Ingrédients { position:right;
+				float: right;
+				margin-left: 45px}
+.Préparation { position:left;
+				float: left;
+				margin-right: 30px;
+				margin-left: 75px;
+				border-top: 20px;
+				width: 75%;}
+
+.Instruction {display: flex;
+	align-items: center; 
+	border-top: 2px solid #b9965f;
+	border-bottom: 2px solid #b9965f;
+	justify-content: space-between;}
+
+.btn-pink {
+  display: inline-block;
+  color: white;
+  background: #F0E68C;
+  margin: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  display: inline-block
+  color:white;
+  background: #6c5ab6;
+}
