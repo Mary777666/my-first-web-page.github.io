@@ -1,7 +1,8 @@
-body {font-family: 'Monserrat', 
+body {font-family: 'Monserrat',
     font-size: 18px;
     color: black;
 	  position: screen;
+    background-size: 100%;
 }
 
   .banner {
@@ -39,10 +40,13 @@ body {font-family: 'Monserrat',
 .navbar {
   display: flex;
   justify-content: space-between;
+  text-align: bottom; 
   font-size: 12px;
-  height: 40px;
+  height: 70px;
   border-bottom-color: black; 
 }
+
+.fakelogo {float: left}
 
 
 h2 { color: #F0E68C;
@@ -58,6 +62,7 @@ h2 { color: #F0E68C;
   width: 100%;
   margin: 30px;
   justify-content: space-between;
+  align-items: baseline;
   } 
 
 .presentation1 {
@@ -75,6 +80,7 @@ a,.links {
   justify-content: flex-end;
   text-decoration: none;
   font-size: 15px;
+  float: right;
 }
 
 a,.link {
@@ -82,6 +88,7 @@ a,.link {
   color: black;
   text-decoration: none;
   font-size: 15px;
+   float: right;
 }
 
 .link:hover {
@@ -112,10 +119,10 @@ ol{line-height: 35px}
 
 .my-btn {
   display: inline-block;
-  color: black;
+  color: white;
   padding: 15px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 1px solid white;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -131,7 +138,9 @@ ol{line-height: 35px}
 
 .Gallery {
   margin-left: 120px;
-  align-items: center;}
+  align-items: center;
+  margin-bottom: 200px;
+  margin-top: 200px;}
 
  h3 { font-size: 150%;
   padding: 20px;
@@ -139,29 +148,26 @@ ol{line-height: 35px}
   align-items: center }
 
 .presentationB {
-justify-content: space-between;}
+  justify-content: space-between;
+  align-items: baseline;
+  display: flex;
+  width: 100%; }
 
-.presentation3 {  
+.presentation4 {  
   float: left;
-  object-position: center;
   font-size: 150%;}
 
-.presentation4 {
+.presentation3 {
   display: flex;
   padding: 10px;
   float: right;
    }
 
-.videosCB {
-  display: flex;
-  align-items: center;
-  margin: 30px;
-}
-
 .typeform {text-align: center; 
-  margin: 30px}
+  margin: 30px;
+  vertical-align: middle;}
 
-  .footer {
+.footer {
   background: black;
   display: flex;
   align-items: center;
@@ -175,12 +181,17 @@ justify-content: space-between;}
   align-items: center;
 }
 .footer-links a {
-  color: black;
+  color: white;
   opacity: 1;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
+
 }
-.footer .fa-heart {
-  color: #D23333;
+
+iframe { border: 20px; }
+
+.fa-camera-retro {
+  font-size: 350%;
+  padding: 10px;
 }
