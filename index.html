@@ -1,67 +1,181 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Mojito</title>
-	<link rel="stylesheet" href="style.css" >
-	<link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
-	<style>
+body {font-family: 'Monserrat', 
+    font-size: 18px;
+    color: black;
+	  position: screen;}
 
-</style>
+  .banner {
+  background-size: cover;
+  background: url("images/IMG_0207.jpg");
+  background-position: center;
+  padding: 150px 0;}
 
-</head>
-	<title>Mojito recipe</title>
-<body>
-	<div class="navbar">
-    <img src="images/logo.png" class="logo">
-    <div class="links">
-      <a href="" class="link">Présentation</a>
-      <a href="" class="link">Cocktails</a>
-      <a href="" class="link">Vidéo</a>
-    </div> </div>
+.bannertext
+{padding: 210px;}
 
- 		 <h1>MOJITO</h1>
- 		 <h2>Le super cocktail</h2>
+.banner h1 {
+  margin: 100;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-size: 150px;
+  margin: 10px;
+  font-family: 'Times New Roman', serif;}
 
- 		 <img src="images/mojito.jpeg">
- 		 <p> Aucun doute possible : l’origine du Mojito est  <strong>100% cubaine </strong>. 
- 		 <br>Toute son histoire repose sur celle de la canne à sucre, dont on fait le rhum.
-  		<br>
-  		 La <i>légende</i> raconte qu’au XIXe siècle, les pirates du navire le Drake consommaient les eaux-de-vie de canne à sucre produites sur l’île de Cuba arrangées de quelques feuilles de menthe parfumées. Dès 1910, le jus de citron vert serait venu agrémenter le breuvage primaire. S’il en est peut-être inspiré, le Mojito n’est né ni dans les cales ni sur le pont d’un bateau pirate, mais bel et bien dans un bar de La Havane. Attiré par le jeu des mélanges <i>– que l’on nommera savamment plus tard la mixologie –</i>, un barman cubain s’est attribué la paternité de ce cocktail qu’il a élaboré à base du meilleur rhum local de l’époque. Il a apporté un équilibre aux saveurs de son mélange et a révélé un rituel d’élaboration. Passionné par son métier, il travaillait alors au bar-club <strong> « La Concha »</strong>, à l’ouest de la capitale, là où les clubs sont légion. Son succès se confirme dans les années 1920 et 1930. </p>
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Monserrat';}
 
-<div class ="Instruction">
-	<div class="Ingrédients">
-	  <h3>Ingrédients</h3>
-	  <ul>
-	  	<li> 4 cl de rhum blanc
-	  	<li> 2 cl de sirop de sucre de canne
-	  	<li> 6 feuilles de menthe
-		<li> 0,5 citron vert
-		<li> 1L eau gazeuse
-		<li> 10 glaçons
-	  </ul>
-	</div>
+.definition {
+  color: white;
+  float: top;}
 
-	<div class="Préparation" margin-70px-right>
-		<h3>Préparation</h3>
-		<ol>
-			<li> Dans un verre de taille moyenne (contenance 40 cl environ), mettez 3 cuillères à café de sucre de canne.
-			<li>Ajoutez-y le jus d'1/2 citron vert.
-			<li>Coupez en 3 ou 4 votre branche de menthe et mettez-la dans le verre (le fait de la couper permet à la saveur de la menthe de mieux se diffuser).
-			<li>Ajoutez un peu d'eau gazeuse (environ 3 cl) puis avec une cuillère à café, remuez bien le tout et écrasez la menthe (insistez sur les branches plus que sur les feuilles, sinon il y aura pleins de petits bouts de menthe assez désagréables au moment de déguster votre cocktail!).
-			<li>Ajoutez 5 glaçons environ.
-			<li>Ensuite versez 6 cl de rhum (en versant à débit moyen). Pour la dose plutôt chargée, comptez jusqu'à 5; pour la dose légère jusqu'à 4.
-			<li>Enfin, complétez avec de l'eau gazeuse.
-		</ol>
-	  </div>
-</div>
-	<br>
-		<div class= "btn-pink">
-  		<a href="https://www.1001cocktails.com/"target="_blank" class="btn-pink"> Découvrez nos autres recettes!</a>
-  		</div>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  height: 40px;
+  border-bottom-color: black; }
 
-	<br>
-	<iframe width="640" height="360" src="https://www.youtube.com/embed/qoBhhTcIKNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</body>
-</html>
+h2 { color: #F0E68C;
+  font-size: 65px;;
+  padding: 40px;
+  position: center;
+ max-width: 50%;
+  top: 50%;
+  left: 50%;}
+
+.presentation { 
+  display: flex;
+  width: 100%;
+  margin: 30px;
+  justify-content: space-between;
+  } 
+
+.presentation1 {
+  float: left;
+  font-size: 150%;}
+
+.presentation2 {
+  display: flex;
+  padding: 20px;
+  font-size: 150%;
+   }
+
+a,.links {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+a,.link {
+  margin: 20px 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.link:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+ul, ol { text-align: left}
+
+img { height: 300px; object-fit: cover}
+
+p {margin: 30px 100px 30px 10px}
+
+ol{line-height: 35px}
+
+.Liste {
+  display: flex;
+  align-items: center;
+}
+.ordered { 
+  border: 1px solid #4fa9b3a3;
+  position:left;
+	float: left;
+	margin: 20px 100px;
+  padding: 30px 70px;
+	width: 30%;
+  box-shadow: 2px 2px 8px grey}
+
+.my-btn {
+  display: inline-block;
+  color: black;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width:100px; top:50%; left:50%;}
+
+.my-btn:hover {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  color: black;
+  background: white;
+  width:100px; top:50%; left:50%;}
+
+.Gallery {
+  margin-left: 120px;
+  align-items: center;}
+
+ h3 { font-size: 150%;
+  padding: 20px;
+  text-align: center;
+  align-items: center }
+
+.presentationB {
+justify-content: space-between;}
+
+.presentation3 {  
+  float: left;
+  object-position: center;
+  font-size: 150%;}
+
+.presentation4 {
+  display: flex;
+  padding: 10px;
+  float: right;
+   }
+
+.videosCB {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.typeform {text-align: center; 
+  margin: 30px}
+
+  .footer {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 1;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
