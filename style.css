@@ -1,79 +1,186 @@
-body {
-    font-family: 'Barlow';
-    font-size: 22px;
-    color: white;
-	text-align: center;
-	background-color: #008bc4;
+body {font-family: 'Monserrat', 
+    font-size: 18px;
+    color: black;
+	  position: screen;
 }
 
-Pour le titre principal :
-- couleur verte
-- taille de police 34px
-img { border-radius: 15px; }
+  .banner {
+  background-size: cover;
+  background: url("images/IMG_0207.jpg");
+  background-position: center;
+  padding: 150px 0;
+}
+
+.bannertext
+{padding: 210px;}
+
+.banner h1 {
+  margin: 100;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-size: 150px;
+  margin: 10px;
+  font-family: 'Times New Roman', serif;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Monserrat';
+}
+
+.definition {
+  color: white;
+  float: top;}
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  background: #E2F3DC;
-  height: 80px;
-
+  font-size: 12px;
+  height: 40px;
+  border-bottom-color: black; 
 }
 
-.links {
+
+h2 { color: #F0E68C;
+  font-size: 65px;;
+  padding: 40px;
+  position: center;
+ max-width: 50%;
+  top: 50%;
+  left: 50%;}
+
+.presentation { 
+  display: flex;
+  width: 100%;
+  margin: 30px;
+  justify-content: space-between;
+  } 
+
+.presentation1 {
+  float: left;
+  font-size: 150%;}
+
+.presentation2 {
+  display: flex;
+  padding: 20px;
+  font-size: 150%;
+   }
+
+a,.links {
   display: flex;
   justify-content: flex-end;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-.link {
+a,.link {
   margin: 20px 10px;
-  color: #9F3442;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .link:hover {
-  color: #6c5ab6;
+  color: orange;
+  text-decoration: none;
 }
-
-h1 {font-size: 150px;
-	margin: 10px;
-}
-
-h2, h3 { color: #F0E68C;
-		font-size: 24px;
-		text-align: center;}
 
 ul, ol { text-align: left}
 
 img { height: 300px; object-fit: cover}
 
-p {margin: 50px 100px 50px 100px}
+p {margin: 30px 100px 30px 10px}
 
-.Ingrédients { position:right;
-				float: right;
-				margin-left: 45px}
-.Préparation { position:left;
-				float: left;
-				margin-right: 30px;
-				margin-left: 75px;
-				border-top: 20px;
-				width: 75%;}
+ol{line-height: 35px}
 
-.Instruction {display: flex;
-	align-items: center; 
-	border-top: 2px solid #b9965f;
-	border-bottom: 2px solid #b9965f;
-	justify-content: space-between;}
+.Liste {
+  display: flex;
+  align-items: center;
+}
+.ordered { 
+  border: 1px solid #4fa9b3a3;
+  position:left;
+	float: left;
+	margin: 20px 100px;
+  padding: 30px 70px;
+	width: 30%;
+  box-shadow: 2px 2px 8px grey}
 
-.btn-pink {
+.my-btn {
   display: inline-block;
-  color: white;
-  background: #F0E68C;
-  margin: 10px;
-  border-radius: 15px;
-  font-weight: bold;
+  color: black;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width:100px; top:50%; left:50%;}
+
+.my-btn:hover {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  color: black;
+  background: white;
+  width:100px; top:50%; left:50%;}
+
+.Gallery {
+  margin-left: 120px;
+  align-items: center;}
+
+ h3 { font-size: 150%;
+  padding: 20px;
+  text-align: center;
+  align-items: center }
+
+.presentationB {
+justify-content: space-between;}
+
+.presentation3 {  
+  float: left;
+  object-position: center;
+  font-size: 150%;}
+
+.presentation4 {
+  display: flex;
+  padding: 10px;
+  float: right;
+   }
+
+.videosCB {
+  display: flex;
+  align-items: center;
+  margin: 30px;
 }
 
-.btn-pink:hover {
-  display: inline-block
-  color:white;
-  background: #6c5ab6;
+.typeform {text-align: center; 
+  margin: 30px}
+
+  .footer {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 1;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer .fa-heart {
+  color: #D23333;
 }
